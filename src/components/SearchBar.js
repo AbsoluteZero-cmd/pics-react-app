@@ -3,16 +3,16 @@ import React from 'react';
 class App extends React.Component {
     state = { term: '' };
 
-    constructor() {
-        super();
-        this.onFormSubmit = this.onFormSubmit.bind(this);
-    }
+    // constructor() {
+    //     super();
+    //     this.onFormSubmit = this.onFormSubmit.bind(this);
+    // }
 
-    onFormSubmit(event) {
+    onFormSubmit = (event) => {
         event.preventDefault();
 
         console.log(this.state.term);
-    }
+    };
 
     render() {
         return (
